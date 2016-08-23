@@ -1,0 +1,14 @@
+{
+  "name": "l1-wordpress-theme",
+  "version": "0.0.0",
+  "description": "Gulp Sass compiler with autoprefixer and sourcemaps for Leve1.ee WordPress theme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.9"
+  }
+}

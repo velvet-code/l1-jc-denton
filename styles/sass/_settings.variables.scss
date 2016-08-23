@@ -1,0 +1,25 @@
+/* ------------------------------------------
+   settings.VARIABLES
+------------------------------------------ */
+
+// Colors
+
+$dark: #1f1f1f;
+$light: #fff;
+
+// Typo
+
+$ff-body: Lato, sans-serif;
+$ff-heading: 'Roboto Condensed', sans-serif;
+
+// Misc
+$gutter: 20px;
+
+$transition-in: .1s;
+$transition-out: .3s;
+
+// z-index map
+
+$zindex: (
+  header: 2000
+);
