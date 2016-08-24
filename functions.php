@@ -1,5 +1,19 @@
 <?php
 
+function enqueue_scripts_styles() {
+  $styles_url = get_template_directory_uri().'/styles/css/global.css';
+  $scripts_url = get_template_directory_uri().'/scripts/main.js';
+  $fonts_url = 'https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i&subset=latin-ext';
+
+  wp_register_style('google-fonts', $fonts_url, null, '0.0.1', 'screen');
+
+  wp_enqueue_style('global-styles', $styles_url, array('google-fonts'), '0.0.1', 'screen');
+  wp_enqueue_script('global-scripts', $scripts_url, array('jquery'), '0.0.1', true);
+
+}
+add_action('wp_enqueue_scripts', 'enqueue_scripts_styles');
+
+
 /**
  * Register Navigation menus
  */

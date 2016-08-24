@@ -4,25 +4,11 @@
 
 .wrap {
   position: relative;
+  max-width: 1440px + $gutter + $gutter;
+  padding: 0 $gutter 0 $gutter;
+  margin: 0 auto;
+}
 
-  max-width: 355px;
-  transition: 0;
-
-  max-width: 1920px;
-
-  // @include mq($bp-2col) {
-  //   max-width: 710px;
-  // }
-
-  // @include mq($bp-3col) {
-  //   max-width: 1065px;
-  // }
-
-  // @include mq($bp-4col) {
-  //   max-width: 1420px;
-  // }
-
-  // @include mq(1844) {
-  //   max-width: 1775px;
-  // }
+.wrap--narrow {
+  max-width: 800px + $gutter + $gutter;
 }

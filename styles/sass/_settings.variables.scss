@@ -4,13 +4,21 @@
 
 // Colors
 
-$dark: #1f1f1f;
 $light: #fff;
+$color-primary: #FF2942;
+$color-secondary: #0E64FF;
+
+$color-dark: #1C1D1E;
+$color-dark-secondary: #20242A;
+$color-dark-tertiary: #272B33;
+
+$color-text-primary: #C9D6EF;
+$color-text-secondary: #9DA5B5;
+
 
 // Typo
 
-$ff-body: Lato, sans-serif;
-$ff-heading: 'Roboto Condensed', sans-serif;
+$ff: 'Space Mono', sans-serif;
 
 // Misc
 $gutter: 20px;
@@ -21,5 +29,6 @@ $transition-out: .3s;
 // z-index map
 
 $zindex: (
-  header: 2000
+  progressbar: 5001,
+  header: 5000
 );

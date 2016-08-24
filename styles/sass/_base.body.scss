@@ -2,6 +2,14 @@
    base.BODY
 ------------------------------------------ */
 body {
-  // background-color: #171717;
-  background-color: #292929;
+
+  &.home {
+    background-color: $color-dark;
+    color: #fff;
+  }
+
+  &.post {
+    background-color: #FAFAFA;
+    color: $color-dark;
+  }
 }
