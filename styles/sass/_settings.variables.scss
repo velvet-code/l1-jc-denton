@@ -4,7 +4,7 @@
 
 // Colors
 
-$light: #fff;
+$light: #FAFAFA;
 $color-primary: #FF2942;
 $color-secondary: #0E64FF;
 
@@ -12,13 +12,17 @@ $color-dark: #1C1D1E;
 $color-dark-secondary: #20242A;
 $color-dark-tertiary: #272B33;
 
-$color-text-primary: #C9D6EF;
-$color-text-secondary: #9DA5B5;
+$color-blue-primary: #C9D6EF;
+$color-blue-secondary: #9DA5B5;
 
 
 // Typo
 
-$ff: 'Space Mono', sans-serif;
+$ff-regular: 'Input Sans Nar Reg', sans-serif;
+$ff-light: 'Input Sans Nar Lt', sans-serif;
+$ff-italic: 'Input Sans Nar It', sans-serif;
+$ff-bold: 'Input Sans Nar Bd', sans-serif;
+
 
 // Misc
 $gutter: 20px;

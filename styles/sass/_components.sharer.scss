@@ -1,0 +1,53 @@
+.sharer {
+  margin-bottom: 50px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  li {
+    position: relative;
+  }
+
+  li:not(:last-child):after {
+    content:'';
+    display: block;
+    height: 100%;
+    width: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(45deg);
+  }
+
+  &__item--fb .icon {
+    color: #3b5998;
+  }
+
+  &__item--twitter .icon {
+    color: #00aced;
+  }
+
+  a {
+    padding: 5px 30px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: rem-calc(12);
+    letter-spacing: 0.05em;
+    font-family: $ff-light;
+    color: $color-dark-tertiary;
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+  .icon {
+    height: 17px;
+    width: 17px;
+  }
+}

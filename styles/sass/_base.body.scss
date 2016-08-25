@@ -5,11 +5,11 @@ body {
 
   &.home {
     background-color: $color-dark;
-    color: #fff;
+    color: $light;
   }
 
   &.post {
-    background-color: #FAFAFA;
+    background-color: $light;
     color: $color-dark;
   }
 }

@@ -2,17 +2,16 @@
 
 (function ($) {
 
-      $(window).on('load resize', function(event) {
+    $(window).on('load resize', function(event) {
 
+    var articleHeight = $('.single-post__body').height();
+    var toTop;
+    var perc;
+    var windowHeight = $(window).height();
 
-      var articleHeight = $('.single-post__body').height();
-      var toTop;
-      var perc;
-      var windowHeight = $(window).height();
-
-      $(window).on('scroll', function(){
-        checkProg();
-      });
+    $(window).on('scroll', function(){
+      checkProg();
+    });
 
     function checkProg(){
       toTop = ($(window).scrollTop()+windowHeight)-$('.single-post__body').offset().top;
@@ -26,7 +25,11 @@
     };
 
     checkProg();
-    })
+  })
 
+
+  $('.js-reveal-header').on('click', function(event) {
+    $('.single-post').toggleClass('single-post--reveal-cover')
+  })
 
 })( jQuery );
