@@ -1,0 +1,49 @@
+.latest-news {
+  ul {
+    list-style: none;
+  }
+
+  &__item {
+    font-size: rem-calc(14);
+    font-family: $ff-light;
+
+    a {
+      display: block;
+      padding: 13px 0;
+      position: relative;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+  }
+
+  &__item-title {
+    font-family: $ff-light;
+    padding-left: 30px;
+    font-size: rem-calc(15);
+  }
+
+  &__item-pubdate {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 17px;
+    word-wrap: break-word;
+    font-size: rem-calc(11);
+    color: $color-blue-secondary;
+    line-height: 1.5;
+
+    &:before {
+      content:'';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: $color-primary;
+      top: 14px;
+      position: absolute;
+    }
+  }
+
+}
