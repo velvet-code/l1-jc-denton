@@ -19,16 +19,27 @@
 
   }
 
+
+  &__item-excerpt {
+    padding-left: 30px;
+    font-size: rem-calc(13);
+    line-height: 1.4;
+    color: $color-blue-secondary;
+  }
+
   &__item-title {
     font-family: $ff-light;
     padding-left: 30px;
-    font-size: rem-calc(15);
+    font-size: rem-calc(14);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
   }
 
   &__item-pubdate {
     position: absolute;
     left: 0;
-    top: 6px;
+    top: 12px;
     width: 17px;
     word-wrap: break-word;
     font-size: rem-calc(11);

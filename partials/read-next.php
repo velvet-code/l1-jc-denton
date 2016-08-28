@@ -39,7 +39,7 @@
 					<h4 class="single-read-next__next-post__title"><?php the_title(); ?></h4>
 
 					<div class="single-read-next__next-post__excerpt">
-						<p><?php the_excerpt(); ?></p>
+						<p><?php echo wp_trim_words( get_the_excerpt(), 45, ' …' ); ?></p>
 					</div>
 
 				</a>
@@ -62,7 +62,7 @@
 
 			$args = array(
 				'post_type' => 'post',
-				'posts_per_page' => 5,
+				'posts_per_page' => 3,
 				'ignore_sticky_posts' => 1,
 				'offset' => 1,
 				// Exclude current post.
@@ -86,6 +86,12 @@
 							<article>
 								<time class="latest-news__item-pubdate"><?php the_time( 'jm' ); ?></time>
 								<h4 class="latest-news__item-title"><?php the_title(); ?></h4>
+
+								<div class="latest-news__item-excerpt">
+
+									<p><?php echo wp_trim_words( get_the_excerpt(), 15, ' …' ); ?></p>
+								</div>
+
 							</article>
 						</a>
 					</li>

@@ -18,6 +18,13 @@
   a {
     color: $light;
     text-decoration: none;
+
+    &:hover {
+      .single-read-next__next-post__title {
+        color: $color-primary;
+      }
+    }
+    
   }
 }
 
@@ -53,6 +60,8 @@
   margin-bottom: 20px;
   line-height: 1.1;
   color: $light;
+  text-transform: uppercase;
+  padding-top: 10px;
 }
 
 
