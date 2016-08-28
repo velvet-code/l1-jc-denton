@@ -2,6 +2,7 @@
   color: $light;
   position: relative;
 
+
   &:after {
     content:'';
     display: block;
@@ -19,10 +20,9 @@
   }
 
   &__title {
-    font-size: rem-calc(40);
     font-family: $ff-bold;
     line-height: 1;
-    text-shadow: 0 0 10px black;
+    font-size: rem-calc(30);
 
     a {
       color: $light;
@@ -31,7 +31,9 @@
         color: $color-primary;
       }
     }
+
   }
+
 
   &__meta {
     list-style: none;
@@ -39,6 +41,7 @@
     font-family: $ff-light;
     margin-bottom: 20px;
     position: relative;
+    font-size: rem-calc(14);
 
     &:after {
       content:'';
@@ -52,8 +55,6 @@
     }
 
     li {
-      text-shadow: 0 0 5px black; 
-      font-size: rem-calc(15);
       color: $color-blue-primary;
 
       &:not(:last-child) {
@@ -70,4 +71,23 @@
     display: block;
     color: rgba($color-blue-primary,.5);
   }
+
+  &__excerpt {
+    font-size: rem-calc(14);
+    color: $color-blue-secondary;
+    line-height: 1.5;
+    font-family: $ff-light;
+  }
+
+  &__title + &__excerpt {
+    margin-top: 20px;
+  }
+}
+
+.post-title-block--hero {
+
+  .post-title-block__title {
+    font-size: rem-calc(40);
+  }
+
 }

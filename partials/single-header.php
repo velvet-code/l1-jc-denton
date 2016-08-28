@@ -12,7 +12,7 @@
 <div class="single-post__header" style="background-image: url('<?php echo esc_url( $large_image_url[0] ); ?>');">
 	<div class="wrap wrap--narrow">
 
-		<div class="post-title-block">
+		<div class="post-title-block post-title-block--hero">
 
 			<ul class="post-title-block__meta">
 				<li>

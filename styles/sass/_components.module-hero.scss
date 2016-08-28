@@ -1,0 +1,44 @@
+.module-hero {
+  background-size: cover;
+  background-position: center center;
+  min-height: 600px;
+  width: 100%;
+  position: relative;
+
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: column nowrap;
+  box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.80);
+  margin-bottom: 20px;
+
+  .post-title-block {
+    margin-left: 60px;
+    margin-bottom: 50px;
+  }
+
+  * {
+    z-index: 10;
+  }
+
+  &:after {
+    content:'';
+    background-color: rgba(#000, .7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+  }
+
+  &--narrow {
+    min-height: 300px;
+    justify-content: center;
+
+    .post-title-block {
+      margin-bottom: 0;
+    }
+  }
+}

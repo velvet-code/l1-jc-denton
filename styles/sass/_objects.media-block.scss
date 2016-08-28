@@ -1,0 +1,20 @@
+.media-block {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+
+  &__figure {
+    margin-right: 40px;
+
+    img {
+      display: block;
+      max-width: 350px;
+      box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.80);
+    }
+
+  }
+
+  &__body {
+    flex: 1;
+  }
+}

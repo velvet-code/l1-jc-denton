@@ -117,3 +117,5 @@
 	</div>
 
 </header>
+
+<div class="main-content">
