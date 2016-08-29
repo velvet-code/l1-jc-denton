@@ -46,7 +46,7 @@
 					'container'			  => 'nav',
 					'container_class' => 'global-header__nav',
 					'menu_class'			=> '',
-					'depth'					  => 2
+					'depth'					  => 2,
 				) );
 				?>
 
@@ -62,35 +62,35 @@
 					<li>
 						<a href="#">
 							<svg class="icon">
-								<use xlink:href="<?php echo get_template_directory_uri(); ?>/images/icons/dist/icons.svg#instagram-icon"/>
+								<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#instagram-icon"/>
 							</svg>
 						</a>
 					</li>
 					<li>
 						<a href="#">
 							<svg class="icon">
-								<use xlink:href="<?php echo get_template_directory_uri(); ?>/images/icons/dist/icons.svg#youtube-icon"/>
+								<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#youtube-icon"/>
 							</svg>
 						</a>
 					</li>
 					<li>
 						<a href="#">
 							<svg class="icon">
-								<use xlink:href="<?php echo get_template_directory_uri(); ?>/images/icons/dist/icons.svg#facebook-icon"/>
+								<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#facebook-icon"/>
 							</svg>
 						</a>
 					</li>
 					<li>
 						<a href="#">
 							<svg class="icon">
-								<use xlink:href="<?php echo get_template_directory_uri(); ?>/images/icons/dist/icons.svg#twitter-icon"/>
+								<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#twitter-icon"/>
 							</svg>
 						</a>
 					</li>
 					<li>
 						<a href="#">
 							<svg class="icon">
-								<use xlink:href="<?php echo get_template_directory_uri(); ?>/images/icons/dist/icons.svg#search-icon"/>
+								<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#search-icon"/>
 							</svg>
 						</a>
 					</li>
