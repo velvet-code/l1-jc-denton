@@ -83,6 +83,13 @@ $header-height: 85px;
   left: 50%;
   top: 20px;
   transform: translatex(-50%);
+
+  span {
+    color: rgba($color-blue-secondary, .4);
+    margin: 0 5px;
+    top: -1px;
+    position: relative;
+  }
 }
 
 .global-header__alt-menu {

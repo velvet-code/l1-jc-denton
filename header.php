@@ -37,7 +37,7 @@
 			<div>
 
 				<div class="global-header__caption">
-					<p>VIRTUAALSUS ╱ VIDEOMÄNGUD ╱ KULTUUR</p>
+					<p>VIRTUAALSUS <span>╱</span> VIDEOMÄNGUD <span>╱</span> KULTUUR</p>
 				</div>
 
 				<?php
