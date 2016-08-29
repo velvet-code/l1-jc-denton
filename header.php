@@ -43,10 +43,10 @@
 				<?php
 				wp_nav_menu( array(
 					'theme_location'	=> 'header_menu',
-					'container'			 => 'nav',
+					'container'			  => 'nav',
 					'container_class' => 'global-header__nav',
 					'menu_class'			=> '',
-					'depth'					 => 1
+					'depth'					  => 2
 				) );
 				?>
 

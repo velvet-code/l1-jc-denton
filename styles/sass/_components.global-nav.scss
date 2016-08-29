@@ -1,0 +1,83 @@
+.global-header__nav {
+  position: relative;
+  z-index: map-get($zindex, submenu);
+  top: 10px;
+
+  > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  > ul > li {
+    display: block;
+
+    > a {
+      padding: 27px 20px;
+    }
+  }
+
+  li {
+    position: relative;
+  }
+
+  a {
+    display: block;
+    color: $color-blue-primary;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: rem-calc(13);
+    letter-spacing: .1em;
+  }
+
+  .menu-item-has-children > a:before {
+    content: '¬';
+    color: $color-primary;
+    position: absolute;
+    top: 24px;
+    left: 0px;
+    transition: .8s;
+  }
+
+  .menu-item-has-children:hover > a:before {
+    top: 29px;
+    transition: .2s;
+  }
+
+  .menu-item-has-children:hover {
+    .sub-menu {
+      display: block;
+    }
+  }
+  .sub-menu {
+    padding: 0px 0;
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 47px;
+    left: 7px;
+    background-image: linear-gradient(-180deg, rgba($color-dark-secondary,0.00) 0%, rgba($color-dark-secondary,0.00) 17px, rgba($color-dark-secondary,0.95) 17px, rgba($color-dark-secondary,0.95) 100%);
+    box-shadow: 0px 10px 50px 0px rgba(0,0,0,0.10);
+    border-left: 1px solid $color-primary;
+
+    li:first-child a {
+      padding-top: 18px;
+    }
+
+    li:last-child a {
+      padding-bottom: 20px;
+    }
+
+    a {
+      padding: 10px 23px 10px 13px;
+      color: $color-blue-secondary;
+      position: relative;
+
+      &:hover {
+        color: $color-primary;
+      }
+
+    }
+  }
+}

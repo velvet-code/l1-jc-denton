@@ -79,30 +79,10 @@ $header-height: 85px;
   font-size: rem-calc(10);
   color: $color-primary;
   letter-spacing: .1em;
-}
-
-.global-header__nav {
-
-  ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-  }
-
-  li {
-
-  }
-
-  a {
-    padding: 10px 15px;
-    color: $color-blue-primary;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: rem-calc(13);
-    letter-spacing: .1em;
-  }
-
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translatex(-50%);
 }
 
 .global-header__alt-menu {
