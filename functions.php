@@ -17,8 +17,64 @@ function enqueue_scripts_styles() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_scripts_styles');
 
+function give_linked_images_class($html, $id, $caption, $title, $align, $url, $size, $alt = '' ){
+	$classes = 'img-link'; // separated by spaces, e.g. 'img image-link'
+
+	// check if there are already classes assigned to the anchor
+	if ( preg_match('/<a.*? class=".*?">/', $html) ) {
+		$html = preg_replace('/(<a.*? class=".*?)(".*?>)/', '$1 ' . $classes . '$2', $html);
+	} else {
+		$html = preg_replace('/(<a.*?)>/', '$1 class="' . $classes . '" >', $html);
+	}
+	return $html;
+}
+add_filter('image_send_to_editor','give_linked_images_class',10,8);
 
 
+function l1_setup() {
+
+	register_nav_menus( array(
+	 'header_menu' => 'Header Menu'
+	) );
+
+	add_theme_support( 'post-thumbnails' );
+
+	// Enable support for HTML5 markup.
+	add_theme_support( 'html5', array(
+		'comment-list',
+		'search-form',
+		'comment-form',
+		'gallery',
+		'caption',
+	) );
+
+
+	/**
+	 * Register image sizes
+	 */
+	/*
+			Featured image aspect ratio is 16:9
+
+			Hero sticky post image uses full image that is uploaded and it needs to be **1920x1080** and optimized or the Internet will blow up (Or at least 16:9 ratio).
+
+			## Default Image sizes from admin panel
+			Thumbnail: 300x300
+			Medium:		640x360
+			Large:		 1280x720
+
+			## Post Thumbnails:
+
+			Grid post image size: 1067x600px
+	*/
+	// ----------------------------------------------------------
+
+		// add_image_size( 'sticky-featured-img', 1920, 1080);
+		add_image_size( 'grid-featured-img', 1067, 600, true);
+
+
+}
+
+add_action( 'after_setup_theme', 'l1_setup' );
 
 
 
@@ -99,80 +155,3 @@ function island_shortcode($atts, $content = null) {
 	return '<div class="content-island">' . $content . '</div>';
 }
 add_shortcode( 'island', 'island_shortcode' );
-
-
-
-
-
-// ==========================================================
-// # Attach a class to linked images parent anchors
-// ==========================================================
-// e.g. a img => a.img img
-// ----------------------------------------------------------
-
-
-function give_linked_images_class($html, $id, $caption, $title, $align, $url, $size, $alt = '' ){
-	$classes = 'img-link'; // separated by spaces, e.g. 'img image-link'
-
-	// check if there are already classes assigned to the anchor
-	if ( preg_match('/<a.*? class=".*?">/', $html) ) {
-		$html = preg_replace('/(<a.*? class=".*?)(".*?>)/', '$1 ' . $classes . '$2', $html);
-	} else {
-		$html = preg_replace('/(<a.*?)>/', '$1 class="' . $classes . '" >', $html);
-	}
-	return $html;
-}
-// add_filter('image_send_to_editor','give_linked_images_class',10,8);
-
-
-function add_class_attachment_link($html){
-		$postid = get_the_ID();
-		$html = str_replace('<a','<a class="gallery-img-link"',$html);
-		return $html;
-}
-// add_filter('wp_get_attachment_link','add_class_attachment_link',10,1);
-
-function l1_setup() {
-
-	register_nav_menus( array(
-	 'header_menu' => 'Header Menu'
-	) );
-
-	add_theme_support( 'post-thumbnails' );
-
-	// Enable support for HTML5 markup.
-	add_theme_support( 'html5', array(
-		'comment-list',
-		'search-form',
-		'comment-form',
-		'gallery',
-		'caption',
-	) );
-
-
-	/**
-	 * Register image sizes
-	 */
-	/*
-			Featured image aspect ratio is 16:9
-
-			Hero sticky post image uses full image that is uploaded and it needs to be **1920x1080** and optimized or the Internet will blow up (Or at least 16:9 ratio).
-
-			## Default Image sizes from admin panel
-			Thumbnail: 300x300
-			Medium:		640x360
-			Large:		 1280x720
-
-			## Post Thumbnails:
-
-			Grid post image size: 1067x600px
-	*/
-	// ----------------------------------------------------------
-
-		// add_image_size( 'sticky-featured-img', 1920, 1080);
-		add_image_size( 'grid-featured-img', 1067, 600, true);
-
-
-}
-
-add_action( 'after_setup_theme', 'l1_setup' );

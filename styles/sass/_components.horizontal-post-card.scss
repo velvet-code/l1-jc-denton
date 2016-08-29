@@ -1,0 +1,10 @@
+.horizontal-post-card {
+  background-color: $color-dark-tertiary;
+  box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.80);
+
+  img {
+    display: block;
+    max-width: 350px;
+  }
+
+}

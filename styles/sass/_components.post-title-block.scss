@@ -2,6 +2,12 @@
   color: $light;
   position: relative;
 
+  &:hover {
+    &:after {
+      box-shadow: 0px 0px 25px 0px $color-primary;
+    }
+  }
+
 
   &:after {
     content:'';
@@ -12,6 +18,7 @@
     left: -15px;
     top: 0;
     height: 100%;
+    box-shadow: 0px 0px 14px 0px $color-primary;
   }
 
   a {
@@ -48,10 +55,11 @@
       display: block;
       position: absolute;
       width: 2px;
-      background-color: $color-dark-secondary;
+      background-color: darken($color-primary, 30);
       left: -15px;
       top: 0;
       height: 100%;
+      z-index: 10;
     }
 
     li {
