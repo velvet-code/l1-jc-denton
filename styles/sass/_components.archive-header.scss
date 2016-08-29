@@ -1,0 +1,20 @@
+.archive-header {
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 40px;
+
+  &__title {
+    text-transform: uppercase;
+    font-family: $ff-light;
+    font-size: rem-calc(50);
+    color: $light;
+
+    span {
+      display: block;
+      font-size: rem-calc(13);
+      font-family: $ff-bold;
+      letter-spacing: .4em;
+      color: $color-blue-primary;
+    }
+  }
+}

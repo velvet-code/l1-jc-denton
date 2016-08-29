@@ -394,13 +394,12 @@ hr, figure {
 /* ------------------------------------------
    base.BODY
 ------------------------------------------ */
-body.home {
+body {
   background-color: #1C1D1E;
   color: #FAFAFA; }
-
-body.post {
-  background-color: #FAFAFA;
-  color: #1C1D1E; }
+  body.post {
+    background-color: #FAFAFA;
+    color: #1C1D1E; }
 
 /* ------------------------------------------
    base.TYPOGRAPHY
@@ -1408,12 +1407,26 @@ img.mfp-img {
 .post-listing__item {
   margin-bottom: 20px; }
 
-.horizontal-post-card {
-  background-color: #272B33;
-  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.8); }
-  .horizontal-post-card img {
-    display: block;
-    max-width: 350px; }
+.horizontal-post-card img {
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.8);
+  display: block;
+  max-width: 350px; }
+
+.archive-header {
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 40px; }
+  .archive-header__title {
+    text-transform: uppercase;
+    font-family: "Input Sans Nar Lt", sans-serif;
+    font-size: 3.125rem;
+    color: #FAFAFA; }
+    .archive-header__title span {
+      display: block;
+      font-size: 0.8125rem;
+      font-family: "Input Sans Nar Bd", sans-serif;
+      letter-spacing: .4em;
+      color: #C9D6EF; }
 
 .latest-news ul {
   list-style: none; }

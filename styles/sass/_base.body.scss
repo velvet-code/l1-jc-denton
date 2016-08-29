@@ -2,11 +2,8 @@
    base.BODY
 ------------------------------------------ */
 body {
-
-  &.home {
-    background-color: $color-dark;
-    color: $light;
-  }
+  background-color: $color-dark;
+  color: $light;
 
   &.post {
     background-color: $light;
