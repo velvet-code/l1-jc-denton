@@ -69,8 +69,19 @@ $header-height: 85px;
 
 
 .global-header__logo {
+  position: relative;
   img {
     display: block;
+  }
+  span {
+    font-size: rem-calc(10);
+    font-family: $ff-light;
+    position: absolute;
+    color: rgba($color-blue-secondary, .3);
+    top: 35px;
+    right: -1px;
+    text-transform: uppercase;
+    letter-spacing: 1.9px;
   }
 }
 

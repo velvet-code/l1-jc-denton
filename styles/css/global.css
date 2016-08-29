@@ -397,7 +397,7 @@ hr, figure {
 body {
   background-color: #1C1D1E;
   color: #FAFAFA; }
-  body.post {
+  body.single-post {
     background-color: #FAFAFA;
     color: #1C1D1E; }
 
@@ -560,8 +560,19 @@ h1, h2, h3, h4, h5, h6 {
     right: -100%;
     margin-right: 20px; }
 
-.global-header__logo img {
-  display: block; }
+.global-header__logo {
+  position: relative; }
+  .global-header__logo img {
+    display: block; }
+  .global-header__logo span {
+    font-size: 0.625rem;
+    font-family: "Input Sans Nar Lt", sans-serif;
+    position: absolute;
+    color: rgba(157, 165, 181, 0.3);
+    top: 35px;
+    right: -1px;
+    text-transform: uppercase;
+    letter-spacing: 1.9px; }
 
 .global-header__caption {
   text-align: center;

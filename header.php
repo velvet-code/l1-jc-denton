@@ -28,6 +28,7 @@
 
 			<a href="<?php echo esc_url( get_home_url() ); ?>" class="global-header__logo">
 				<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/level1-logo.svg" alt="Level1">
+				<span title="Vajame abikäsi meie veebi arendmisel, kirjuta levelup@level1.ee">Early access</span>
 			</a>
 
 		</div>
