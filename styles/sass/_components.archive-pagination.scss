@@ -1,0 +1,27 @@
+.archive-pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 110px;
+  margin-top: 90px;
+
+  a {
+    color: $color-primary;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: rem-calc(20);
+    padding: 20px;
+
+    &:hover {
+      color: $light;
+    }
+
+    span {
+      padding: 0 15px;
+      font-size: rem-calc(12);
+      position: relative;
+      top: -2px;
+      font-family: $ff-bold;
+      color: darken($color-primary, 20);
+    }
+  }
+}

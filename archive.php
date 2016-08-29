@@ -106,8 +106,8 @@ function current_page_nr() {
 		<!-- /.post-listing -->
 
 		<div class="archive-pagination">
-			<?php next_posts_link('&#8592; Vanemad postitused') ?>
-			<?php previous_posts_link('Uuemad postitused &#8594;') ?>
+			<?php next_posts_link('<span></span> Vanemad postitused') ?>
+			<?php previous_posts_link('Uuemad postitused <span></span>') ?>
 		</div>
 
 	</div>
