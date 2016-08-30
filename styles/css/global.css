@@ -391,6 +391,16 @@ hr, figure {
   margin: 0;
   padding: 0; }
 
+.screen-reader-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
 /* ------------------------------------------
    base.BODY
 ------------------------------------------ */
@@ -1602,21 +1612,21 @@ img.mfp-img {
           justify-content: center;
   margin-bottom: 110px;
   margin-top: 90px; }
-  .archive-pagination a {
-    color: #FF2942;
+  .archive-pagination .page-numbers {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.25rem;
-    padding: 20px; }
+    font-size: 0.9375rem;
+    padding: 0 10px; }
+  .archive-pagination .dots {
+    color: #9DA5B5; }
+  .archive-pagination a {
+    color: #FF2942; }
     .archive-pagination a:hover {
       color: #FAFAFA; }
     .archive-pagination a span {
       padding: 0 15px;
-      font-size: 0.75rem;
-      position: relative;
-      top: -2px;
-      font-family: "Input Sans Nar Bd", sans-serif;
-      color: #c20017; }
+      font-size: 0.8125rem;
+      font-family: "Input Sans Nar Bd", sans-serif; }
 
 .latest-news ul {
   list-style: none; }
