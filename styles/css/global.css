@@ -442,7 +442,9 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 840px; }
 
 .main-content {
-  padding-top: 105px; }
+  padding-top: 105px;
+  background-color: #1C1D1E;
+  position: relative; }
   body.single-post .main-content {
     padding-top: 0; }
 
@@ -1640,6 +1642,19 @@ img.mfp-img {
       padding: 0 15px;
       font-size: 0.8125rem;
       font-family: "Input Sans Nar Bd", sans-serif; }
+
+.banner--top {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0; }
+
+body.top-banner {
+  padding-top: 320px; }
+  body.top-banner .global-header {
+    position: relative; }
+  body.top-banner .main-content {
+    padding-top: 20px; }
 
 .latest-news ul {
   list-style: none; }

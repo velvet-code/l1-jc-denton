@@ -18,7 +18,18 @@
 
 	<?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<?php if ( is_front_page() ): ?>
+	<body <?php body_class(' top-banner '); ?>>
+		<div class="banner banner--top">
+			<div class="wrap">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/_placeholders/placeholder_banner_top.jpg" alt="" />
+			</div>
+		</div>		
+<?php else:  ?>
+	<body <?php body_class(); ?>>
+<?php endif; ?>
+
+
 
 <header class="global-header">
 
@@ -73,7 +84,7 @@
 								<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#youtube-icon"/>
 							</svg>
 						</a>
-					</li>					
+					</li>
 					<li>
 						<a href="https://www.instagram.com/mangudeoo/">
 							<svg class="icon">

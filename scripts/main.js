@@ -87,4 +87,8 @@
     });
   });
 
+  if ($('body').hasClass('top-banner')) {
+    $(".global-header").sticky({topSpacing:0});
+  }
+
 })( jQuery );
