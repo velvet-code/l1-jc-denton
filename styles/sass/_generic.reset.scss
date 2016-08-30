@@ -26,3 +26,7 @@ hr, figure {
   // background-color: $brand-color--yellow;
   // color: $brand-color--blue;
 }
+
+.screen-reader-text {
+  @include visuallyhidden();
+}

@@ -4,24 +4,26 @@
   margin-bottom: 110px;
   margin-top: 90px;
 
-  a {
-    color: $color-primary;
+  .page-numbers {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: rem-calc(20);
-    padding: 20px;
+    font-size: rem-calc(15);
+    padding: 0 10px;
+  }
 
+  .dots {
+    color: $color-blue-secondary;
+  }
+
+  a {
+    color: $color-primary;
     &:hover {
       color: $light;
     }
-
     span {
       padding: 0 15px;
-      font-size: rem-calc(12);
-      position: relative;
-      top: -2px;
+      font-size: rem-calc(13);
       font-family: $ff-bold;
-      color: darken($color-primary, 20);
     }
   }
 }

@@ -15,6 +15,8 @@
  */
 
 get_header(); ?>
+<?php if ( !is_paged() ): ?>
+
 
 <?php
 if ( have_rows( 'home_modules' ) ) : ?>
@@ -47,12 +49,16 @@ if ( have_rows( 'home_modules' ) ) : ?>
 		no layouts found
 
 <?php endif; // have_rows('home_modules')?>
-
+<?php endif; ?>
 <?php
 // The query.
+if ( get_query_var( 'paged' ) ) { $paged = get_query_var( 'paged' ); }
+elseif ( get_query_var( 'page' ) ) { $paged = get_query_var( 'page' ); }
+else { $paged = 1; }
 $args = array(
 	'posts_per_page'      => 20,
 	'ignore_sticky_posts' => 1,
+	'paged' => $paged,
 );
 $the_query = new WP_Query( $args ); ?>
 
@@ -114,9 +120,23 @@ $the_query = new WP_Query( $args ); ?>
 			<!-- /.post-listing__item -->
 
 			<?php endwhile; ?>
-
 		</div>
 		<!-- /.post-listing -->
+		<div class="archive-pagination">
+			<?php
+			$big = 999999999; // need an unlikely integer
+
+			echo paginate_links( array(
+				'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+				'format' => '?paged=%#%',
+				'current' => max( 1, $paged ),
+				'total' => $the_query->max_num_pages,
+				'mid_size'  => 2,
+				'prev_text' => __( '<span></span>', 'textdomain' ),
+				'next_text' => __( '<span></span>', 'textdomain' ),
+				) );
+				?>
+			</div>
 	</div>
 	<!-- /.wrap -->
 
