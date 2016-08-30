@@ -28,12 +28,18 @@ get_header(); ?>
 					</div>
 					<!-- /.body-content -->
 
+
+
+					<div class="tags">
+						<?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
+					</div>
+
+
 				</div>
 				<!-- /.wrap -->
 
-
 				<?php get_template_part( 'partials/read-next' ); ?>
-				
+
 			</div>
 			<!-- /.single-post__content -->
 

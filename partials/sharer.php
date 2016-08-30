@@ -35,13 +35,13 @@
 				Saada
 			</a>
 		</li>
-		<li>
-			<a href="#">
+		<!-- <li>
+			<a href="#" class="js-show-comments">
 				<svg class="icon">
 					<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#twitter-icon"/>
 				</svg>
 				Avalda arvamust
 			</a>
-		</li>
+		</li> -->
 	</ul>
 </div>
