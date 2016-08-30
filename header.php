@@ -61,40 +61,40 @@
 			<div class="global-header__alt-menu">
 				<ul>
 					<li>
-						<a href="#">
-							<svg class="icon">
-								<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#instagram-icon"/>
-							</svg>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<svg class="icon">
-								<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#youtube-icon"/>
-							</svg>
-						</a>
-					</li>
-					<li>
-						<a href="#">
+						<a href="https://www.facebook.com/level1.ee/">
 							<svg class="icon">
 								<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#facebook-icon"/>
 							</svg>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="https://www.instagram.com/mangudeoo/">
+							<svg class="icon">
+								<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#instagram-icon"/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/level1ee">
 							<svg class="icon">
 								<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#twitter-icon"/>
 							</svg>
 						</a>
 					</li>
 					<li>
+						<a href="https://www.youtube.com/user/level1ee">
+							<svg class="icon">
+								<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#youtube-icon"/>
+							</svg>
+						</a>
+					</li>
+					<!-- <li>
 						<a href="#">
 							<svg class="icon">
 								<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#search-icon"/>
 							</svg>
 						</a>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 			<!-- /.global-header__additional-menu -->
