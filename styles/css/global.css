@@ -1603,15 +1603,19 @@ img.mfp-img {
       letter-spacing: .4em;
       color: #C9D6EF; }
 
+.pagination-footer {
+  background-color: #20242A;
+  padding: 50px 0;
+  margin-top: 100px;
+  border-top: 1px solid #272B33; }
+
 .archive-pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 110px;
-  margin-top: 90px; }
+          justify-content: center; }
   .archive-pagination .page-numbers {
     text-decoration: none;
     text-transform: uppercase;

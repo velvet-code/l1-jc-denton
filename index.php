@@ -122,6 +122,12 @@ $the_query = new WP_Query( $args ); ?>
 			<?php endwhile; ?>
 		</div>
 		<!-- /.post-listing -->
+	</div>
+	<!-- /.wrap -->
+
+	<footer class="pagination-footer">
+		<div class="wrap">
+
 		<div class="archive-pagination">
 			<?php
 			$big = 999999999; // need an unlikely integer
@@ -137,8 +143,9 @@ $the_query = new WP_Query( $args ); ?>
 				) );
 				?>
 			</div>
-	</div>
-	<!-- /.wrap -->
+			</div>
+			<!-- /.wrap -->
+		</footer>
 
 	<?php wp_reset_postdata(); ?>
 

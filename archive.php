@@ -103,20 +103,26 @@ function current_page_nr() {
 
 	<?php endwhile; ?>
 		</div>
-		<!-- /.post-listing -->
-
-		<div class="archive-pagination">
-			<?php
-			the_posts_pagination( array(
-				'mid_size'  => 2,
-				'prev_text' => __( '<span></span>', 'textdomain' ),
-				'next_text' => __( '<span></span>', 'textdomain' ),
-			) );
-			?>
-		</div>
-
 	</div>
 	<!-- /.wrap -->
+	<!-- /.post-listing -->
+		<footer class="pagination-footer">
+			<div class="wrap">
+
+				<div class="archive-pagination">
+					<?php
+					the_posts_pagination( array(
+						'mid_size'  => 2,
+						'prev_text' => __( '<span></span>', 'textdomain' ),
+						'next_text' => __( '<span></span>', 'textdomain' ),
+						) );
+						?>
+				</div>
+				
+			</div>
+			<!-- /.wrap -->
+		</footer>
+		<!-- /.pagination-footer -->
 
 	<?php else: ?>
 
