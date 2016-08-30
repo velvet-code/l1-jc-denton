@@ -30,6 +30,8 @@
 
   $('.js-reveal-header').on('click', function(event) {
     $('.single-post').toggleClass('single-post--reveal-cover')
+    $('.post-title-block').fadeToggle()
+    $('.global-header').fadeToggle()
   })
 
   $(".single-post").fitVids();

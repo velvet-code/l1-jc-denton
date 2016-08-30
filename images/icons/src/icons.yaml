@@ -17,3 +17,11 @@ youtube:
 search:
   title: Search
   description: Loupe
+
+letter:
+  title: Email
+  description: Letter
+
+enlarge:
+  title: Enlarge image
+  description: Enlarge image

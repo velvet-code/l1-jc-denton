@@ -30,7 +30,7 @@
 		<li>
 			<a href="mailto:?subject=Soovitus&body=<?php the_permalink(); ?>">
 				<svg class="icon">
-					<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#twitter-icon"/>
+					<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#letter-icon"/>
 				</svg>
 				Saada
 			</a>

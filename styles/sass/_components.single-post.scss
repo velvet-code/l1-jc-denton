@@ -62,9 +62,24 @@
 
 .single-post__header-reveal {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 20px;
+  right: 20px;
   z-index: 10;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: rgba($color-blue-primary, .2);
+  cursor: pointer;
+
+  &:hover {
+    color: rgba($color-blue-primary, .8);
+  }
+
+  .icon {
+    transform: rotate(90deg);
+    width: 30px;
+    height: 30px;
+  }
 }
 
 

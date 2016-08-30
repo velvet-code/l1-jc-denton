@@ -47,5 +47,9 @@
 		<!-- /.wrap -->
 	</div>
 	<!-- /.post-title-block -->
-	<button class="single-post__header-reveal js-reveal-header">Zoom</button>
+	<button class="single-post__header-reveal js-reveal-header">
+		<svg class="icon">
+			<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#enlarge-icon"/>
+		</svg>
+	</button>
 </div>
