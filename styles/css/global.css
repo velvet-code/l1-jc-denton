@@ -610,12 +610,14 @@ h1, h2, h3, h4, h5, h6 {
 .global-header__alt-menu a {
   padding: 5px; }
   .global-header__alt-menu a:hover .icon {
-    color: #0E64FF; }
+    color: #FAFAFA; }
 
 .global-header__alt-menu .icon {
   height: 20px;
   width: 20px;
-  color: #fff; }
+  color: #9DA5B5; }
+  .global-header__alt-menu .icon--youtube {
+    width: 27px; }
 
 .progressbar .wrap {
   display: -webkit-box;

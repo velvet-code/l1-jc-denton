@@ -114,14 +114,18 @@ $header-height: 85px;
     padding: 5px;
 
     &:hover .icon {
-      color: $color-secondary;
+      color: $light;
     }
   }
 
   .icon {
     height: 20px;
     width: 20px;
-    color: #fff;
+    color: $color-blue-secondary;
+
+    &--youtube {
+      width: 27px;
+    }
   }
 }
 

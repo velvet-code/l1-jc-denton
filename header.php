@@ -68,6 +68,13 @@
 						</a>
 					</li>
 					<li>
+						<a href="https://www.youtube.com/user/level1ee">
+							<svg class="icon icon--youtube">
+								<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#youtube-icon"/>
+							</svg>
+						</a>
+					</li>					
+					<li>
 						<a href="https://www.instagram.com/mangudeoo/">
 							<svg class="icon">
 								<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#instagram-icon"/>
@@ -78,13 +85,6 @@
 						<a href="https://twitter.com/level1ee">
 							<svg class="icon">
 								<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#twitter-icon"/>
-							</svg>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.youtube.com/user/level1ee">
-							<svg class="icon">
-								<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#youtube-icon"/>
 							</svg>
 						</a>
 					</li>
