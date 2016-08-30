@@ -6,6 +6,7 @@ $header-height: 85px;
   box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.50);
   min-height: $header-height;
   z-index: map-get($zindex, header);
+  border-bottom: 1px solid $color-dark-tertiary;
 
   > .wrap {
     display: flex;
