@@ -20,8 +20,8 @@
 </head>
 <?php if ( is_front_page() ): ?>
 	<body <?php body_class(' top-banner '); ?>>
-		<div class="banner banner--top" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/_placeholders/placeholder_banner_top.jpg')">
-		</div>
+		<a href="#" class="banner banner--top" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/_placeholders/placeholder_banner_top.jpg')">
+		</a>
 <?php else:  ?>
 	<body <?php body_class(); ?>>
 <?php endif; ?>
