@@ -16,6 +16,18 @@
 	<meta charset="UTF-8">
 	<title>Level1</title>
 
+
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_template_directory_uri() ) ?>/images/favicons/apple-touch-icon.png?v=PYEqxpp0KA">
+	<link rel="icon" type="image/png" href="<?php echo esc_url( get_template_directory_uri() ) ?>/images/favicons/favicon-32x32.png?v=PYEqxpp0KA" sizes="32x32">
+	<link rel="icon" type="image/png" href="<?php echo esc_url( get_template_directory_uri() ) ?>/images/favicons/favicon-16x16.png?v=PYEqxpp0KA" sizes="16x16">
+	<link rel="manifest" href="<?php echo esc_url( get_template_directory_uri() ) ?>/images/favicons/manifest.json?v=PYEqxpp0KA">
+	<link rel="mask-icon" href="<?php echo esc_url( get_template_directory_uri() ) ?>/images/favicons/safari-pinned-tab.svg?v=PYEqxpp0KA" color="#ff2942">
+	<link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() ) ?>/images/favicons/favicon.ico?v=PYEqxpp0KA">
+	<meta name="apple-mobile-web-app-title" content="Level1">
+	<meta name="application-name" content="Level1">
+	<meta name="msapplication-config" content="<?php echo esc_url( get_template_directory_uri() )?>/images/favicons/browserconfig.xml?v=PYEqxpp0KA">
+	<meta name="theme-color" content="#ffffff">
+
 	<?php wp_head(); ?>
 </head>
 <?php if ( is_front_page() ): ?>
