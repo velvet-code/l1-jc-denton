@@ -92,4 +92,8 @@
   }
   $('.latest-news','.hero-aside__side ').scrollbar();
 
+  $('.menu-trigger').on('click', function(event) {
+    $('.global-header__nav').slideToggle();
+  })
+
 })( jQuery );

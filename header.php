@@ -72,6 +72,8 @@
 					'depth'					  => 2,
 				) );
 				?>
+				<button class="menu-trigger">Menüü</button>
+				
 
 			</div>
 

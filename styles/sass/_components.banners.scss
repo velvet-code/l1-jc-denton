@@ -7,17 +7,24 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  display: none;
+
+  @include mq(860) {
+    display: block;
+  }
 }
 
-body.top-banner {
-padding-top: 220px;
+@include mq(860) {
+  body.top-banner {
+    padding-top: 220px;
 
-  .global-header {
-    position: relative;
+    .global-header {
+      position: relative;
+    }
+
+    .main-content {
+      padding-top: 20px;
+    }
+
   }
-
-  .main-content {
-    padding-top: 20px;
-  }
-
 }

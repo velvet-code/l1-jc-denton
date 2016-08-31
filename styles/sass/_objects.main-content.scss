@@ -1,7 +1,11 @@
 .main-content {
-  padding-top: 85px + 20px;
+  padding-top: 20px;
   background-color: $color-dark;
   position: relative;
+
+  @include mq(860) {
+    padding-top: 85px + 20px;
+  }
 
   body.single-post & {
     padding-top: 0;
