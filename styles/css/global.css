@@ -2411,7 +2411,7 @@ img.mfp-img {
       font-family: "Input Sans Nar Bd", sans-serif; }
 
 .banner--top {
-  background-color: #fff;
+  background-color: #000;
   position: fixed;
   width: 100%;
   top: 0;
@@ -2421,7 +2421,7 @@ img.mfp-img {
   background-repeat: no-repeat; }
 
 body.top-banner {
-  padding-top: 320px; }
+  padding-top: 220px; }
   body.top-banner .global-header {
     position: relative; }
   body.top-banner .main-content {
