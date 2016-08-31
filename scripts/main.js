@@ -8,13 +8,15 @@
     var toTop;
     var perc;
     var windowHeight = $(window).height();
+    console.log(articleHeight);
+    console.log(( $( window ).scrollTop() + windowHeight ));
 
     $(window).on('scroll', function(){
       checkProg();
     });
 
     function checkProg(){
-      toTop = ($(window).scrollTop()+windowHeight)-$('.main-content').offset().top;
+      toTop = ( $( window ).scrollTop() + windowHeight ) - $('.main-content').offset().top;
       perc = toTop/articleHeight;
       fillProgressBar(perc);
     }

@@ -132,6 +132,9 @@ $header-height: 85px;
 
 
 .progressbar {
+  position: relative;
+  margin-top: -2px;
+
   .wrap {
     display: flex;
     align-content: center;
@@ -148,6 +151,8 @@ $header-height: 85px;
   flex: 1 0 70%;
   justify-content: center;
   position: relative;
+  overflow: hidden;
+  height: 2px;
 }
 
 .global-header__progress-right {

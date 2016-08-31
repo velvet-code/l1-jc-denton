@@ -621,12 +621,15 @@ h1, h2, h3, h4, h5, h6 {
   .global-header__alt-menu .icon--youtube {
     width: 27px; }
 
-.progressbar .wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center; }
+.progressbar {
+  position: relative;
+  margin-top: -2px; }
+  .progressbar .wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center; }
 
 .global-header__progress-left {
   -webkit-box-flex: 1;
@@ -642,7 +645,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  height: 2px; }
 
 .global-header__progress-right {
   -webkit-box-flex: 1;
