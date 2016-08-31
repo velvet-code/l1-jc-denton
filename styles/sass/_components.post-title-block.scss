@@ -53,6 +53,7 @@
     margin-bottom: 20px;
     position: relative;
     font-size: rem-calc(14);
+    flex-flow: row wrap;
 
     &:after {
       content:'';
@@ -68,6 +69,7 @@
 
     li {
       color: $color-blue-primary;
+      margin-bottom: 10px;
 
       &:not(:last-child) {
         margin-right: 40px;
@@ -99,7 +101,11 @@
 .post-title-block--hero {
 
   .post-title-block__title {
-    font-size: rem-calc(30);
+    font-size: rem-calc(20);
+
+    @include mq(580) {
+      font-size: rem-calc(30);
+    }
 
     @include mq(1024) {
       font-size: rem-calc(40);

@@ -1,7 +1,6 @@
 .module-hero {
   background-size: cover;
   background-position: center center;
-  min-height: 600px;
   width: 100%;
   position: relative;
 
@@ -16,9 +15,18 @@
   margin-bottom: 40px;
   padding: 40px 20px 40px 0;
 
+  @include mq(580) {
+    min-height: 600px;
+  }
+
   .post-title-block {
-    margin-left: 60px;
-    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+
+    @include mq(580) {
+      margin-left: 60px;
+      margin-bottom: 50px;
+    }
   }
 
   * {

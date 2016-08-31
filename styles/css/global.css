@@ -448,6 +448,8 @@ h1, h2, h3, h4, h5, h6 {
   @media screen and (min-width: 53.75em) {
     .main-content {
       padding-top: 105px; } }
+  body.archive .main-content {
+    padding-top: 105px; }
   body.single-post .main-content {
     padding-top: 0; }
 
@@ -952,7 +954,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Input Sans Nar Lt", sans-serif;
     margin-bottom: 20px;
     position: relative;
-    font-size: 0.875rem; }
+    font-size: 0.875rem;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap; }
     .post-title-block__meta:after {
       content: '';
       display: block;
@@ -964,7 +968,8 @@ h1, h2, h3, h4, h5, h6 {
       height: 100%;
       z-index: 10; }
     .post-title-block__meta li {
-      color: #C9D6EF; }
+      color: #C9D6EF;
+      margin-bottom: 10px; }
       .post-title-block__meta li:not(:last-child) {
         margin-right: 40px; }
   .post-title-block__meta-label {
@@ -982,7 +987,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 20px; }
 
 .post-title-block--hero .post-title-block__title {
-  font-size: 1.875rem; }
+  font-size: 1.25rem; }
+  @media screen and (min-width: 36.25em) {
+    .post-title-block--hero .post-title-block__title {
+      font-size: 1.875rem; } }
   @media screen and (min-width: 64em) {
     .post-title-block--hero .post-title-block__title {
       font-size: 2.5rem; } }
@@ -1381,7 +1389,6 @@ h1, h2, h3, h4, h5, h6 {
 .module-hero {
   background-size: cover;
   background-position: center center;
-  min-height: 600px;
   width: 100%;
   position: relative;
   background-position: center;
@@ -1399,9 +1406,16 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.8);
   margin-bottom: 40px;
   padding: 40px 20px 40px 0; }
+  @media screen and (min-width: 36.25em) {
+    .module-hero {
+      min-height: 600px; } }
   .module-hero .post-title-block {
-    margin-left: 60px;
-    margin-bottom: 50px; }
+    margin-left: 30px;
+    margin-bottom: 0px; }
+    @media screen and (min-width: 36.25em) {
+      .module-hero .post-title-block {
+        margin-left: 60px;
+        margin-bottom: 50px; } }
   .module-hero * {
     z-index: 10; }
   .module-hero:after {

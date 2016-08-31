@@ -7,6 +7,10 @@
     padding-top: 85px + 20px;
   }
 
+  body.archive & {
+    padding-top: 85px + 20px;
+  }
+  
   body.single-post & {
     padding-top: 0;
   }
