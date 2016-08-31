@@ -16,7 +16,7 @@
 	<meta charset="UTF-8">
 	<title>Level1</title>
 
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_template_directory_uri() ) ?>/images/favicons/apple-touch-icon.png?v=PYEqxpp0KA">
 	<link rel="icon" type="image/png" href="<?php echo esc_url( get_template_directory_uri() ) ?>/images/favicons/favicon-32x32.png?v=PYEqxpp0KA" sizes="32x32">
 	<link rel="icon" type="image/png" href="<?php echo esc_url( get_template_directory_uri() ) ?>/images/favicons/favicon-16x16.png?v=PYEqxpp0KA" sizes="16x16">
@@ -39,6 +39,8 @@
 <?php endif; ?>
 
 
+<div style="overflow-x:hidden;">
+<!-- hacky fix for now -->
 
 <header class="global-header">
 
