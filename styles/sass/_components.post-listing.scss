@@ -1,5 +1,9 @@
 .post-listing {
   &__item {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+
+    @include mq(768) {
+      margin-bottom: 20px;
+    }
   }
 }

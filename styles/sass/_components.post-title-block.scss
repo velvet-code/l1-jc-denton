@@ -29,7 +29,11 @@
   &__title {
     font-family: $ff-bold;
     line-height: 1;
-    font-size: rem-calc(30);
+    font-size: rem-calc(25);
+
+    @include mq(1024) {
+      font-size: rem-calc(30);
+    }
 
     a {
       color: $light;
@@ -95,7 +99,11 @@
 .post-title-block--hero {
 
   .post-title-block__title {
-    font-size: rem-calc(40);
+    font-size: rem-calc(30);
+
+    @include mq(1024) {
+      font-size: rem-calc(40);
+    }
   }
 
 }

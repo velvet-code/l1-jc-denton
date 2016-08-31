@@ -165,14 +165,24 @@
   }
 
   > p:first-child {
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-family: $ff-light;
     line-height: 1.6;
+
+    @include mq(700) {
+      font-size: 1.3em;
+    }
   }
 
   p {
     line-height: 2;
     margin-bottom: 2em;
+    font-size: rem-calc(14);
+
+    @include mq(500) {
+      font-size: rem-calc(16);
+    }
+
   }
 
   a {
@@ -191,12 +201,19 @@
   }
 
   .gallery {
-    margin-left: -250px;
-    width: calc( 100% + 500px );
+    margin-left: 0px;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
-    margin-bottom: 50px;
-    margin-top: 80px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    @include mq(1330) {
+      margin-bottom: 50px;
+      margin-top: 80px;
+      margin-left: -250px;
+      width: calc( 100% + 500px );
+    }
 
     a {
       box-shadow: none;
@@ -216,9 +233,14 @@
     }
 
     .gallery-item {
-      width: 10%;
-      padding: 10px;
+      width: 20%;
       transition: .2s ease-out;
+      padding: 5px;
+
+      @include mq(1330) {
+        width: 10%;
+        padding: 10px;
+      }
 
       &:hover {
         transition: .1s;
@@ -292,19 +314,27 @@
   }
 
   .pullquote--right {
-    text-align: left;
-    float: right;
-    width: 40%;
-    margin-left: 50px;
     position: relative;
+    text-align: center;
+
+    @include mq(700) {
+      text-align: left;
+      float: right;
+      width: 40%;
+      margin-left: 50px;
+    }
   }
 
   .pullquote--left {
-    text-align: left;
-    float: left;
-    width: 40%;
-    margin-right: 40px;
     position: relative;
+    text-align: center;
+
+    @include mq(700) {
+      text-align: left;
+      float: left;
+      width: 40%;
+      margin-right: 40px;
+    }
   }
 
   .pullquote--center {
@@ -324,22 +354,47 @@
 
   .alignleft,
   img.alignleft {
-    float: left;
-    margin: 10px 30px 30px -200px;
-    max-width: 500px;
+    margin: 40px auto;
+
+    @include mq(700) {
+      float: left;
+
+      margin: 10px 30px 30px 0px;
+      max-width: 300px;
+    }
+
+    @include mq(1240) {
+      margin: 10px 30px 30px -200px;
+      max-width: 500px;
+    }
   }
 
   .alignright,
   img.alignright {
-    float: right;
-    margin: 10px -200px 30px 30px;
-    max-width: 500px;
+
+    margin: 40px auto;
+
+    @include mq(700) {
+      float: right;
+      margin: 10px 0 30px 30px;
+      max-width: 300px;
+    }
+
+    @include mq(1240) {
+      margin: 10px -200px 30px 30px;
+      max-width: 500px;
+    }
   }
 
   .aligncenter,
   img.aligncenter {
-    max-width: calc( 100% + 400px );
-    margin: 50px 0 50px -200px;
+    max-width: 100%;
+    margin: 50px 0 50px 0px;
+
+    @include mq(1240) {
+      max-width: calc( 100% + 400px );
+      margin: 50px 0 50px -200px;
+    }
   }
 
   .alignnone,

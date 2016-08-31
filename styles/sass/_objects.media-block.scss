@@ -1,9 +1,16 @@
 .media-block {
   display: flex;
-  align-items: center;
+  flex-flow: column;
+
+  @include mq(768) {
+    align-items: center;
+    flex-flow: row;
+  }
 
   &__figure {
-    margin-right: 40px;
+    @include mq(768) {
+      margin-right: 40px;
+    }
   }
 
   &__body {

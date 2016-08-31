@@ -3,7 +3,10 @@
   overflow-x: hidden;
 
   .wrap {
-    display: flex;
+
+    @include mq(860) {
+      display: flex;
+    }
   }
 
   &__label {
@@ -31,25 +34,32 @@
 
 
 .single-read-next__next-post {
-  flex: 3;
-  padding: 80px 60px 140px 0;
+  padding: 20px 0px 20px 0px;
+  @include mq(860) {
+    flex: 3;
+    padding: 80px 60px 140px 0;
+  }
 }
 
 .single-read-next__latest-posts {
-  padding: 80px 0 140px 60px;
-  flex: 2;
+  padding: 20px 20px 20px 20px;
+  @include mq(860) {
+    padding: 80px 0 140px 60px;
+    flex: 2;
+  }
   background-color: $color-dark-tertiary;
   position: relative;
-
-  &:before {
-    content:'';
-    display: block;
-    background-color: $color-dark-tertiary;
-    width: 100%;
-    top: 0;
-    height: 100%;
-    position: absolute;
-    right: -100%;
+  @include mq(860) {
+    &:before {
+      content:'';
+      display: block;
+      background-color: $color-dark-tertiary;
+      width: 100%;
+      top: 0;
+      height: 100%;
+      position: absolute;
+      right: -100%;
+    }
   }
 }
 

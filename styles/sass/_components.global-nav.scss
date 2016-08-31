@@ -14,7 +14,11 @@
     display: block;
 
     > a {
-      padding: 27px 20px;
+      padding: 27px 15px;
+
+      @include mq(1024) {
+        padding: 27px 20px;
+      }
     }
   }
 
@@ -27,8 +31,12 @@
     color: $color-blue-primary;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: rem-calc(13);
+    font-size: rem-calc(11);
     letter-spacing: .1em;
+
+    @include mq(1024) {
+      font-size: rem-calc(13);
+    }
   }
 
   .menu-item-has-children > a:before {
