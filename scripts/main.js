@@ -8,8 +8,6 @@
     var toTop;
     var perc;
     var windowHeight = $(window).height();
-    console.log(articleHeight);
-    console.log(( $( window ).scrollTop() + windowHeight ));
 
     $(window).on('scroll', function(){
       checkProg();
@@ -92,5 +90,6 @@
   if ($('body').hasClass('top-banner')) {
     $(".global-header").sticky({topSpacing:0});
   }
+  $('.latest-news','.hero-aside__side ').scrollbar();
 
 })( jQuery );

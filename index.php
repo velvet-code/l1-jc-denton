@@ -34,9 +34,13 @@ if ( have_rows( 'home_modules' ) ) : ?>
 
 				get_template_part( 'partials/module-hero' );
 
-			elseif ( get_row_layout() === 'hero_latest_news' ) :
+			elseif ( get_row_layout() === 'hero_filter' ) :
 
-				//  get_template_part('partials/module-hero-latest-news');
+				get_template_part('partials/module-hero-filter');
+
+			elseif ( get_row_layout() === 'hero_banner' ) :
+
+				get_template_part('partials/module-hero-banner');
 
 			endif;
 

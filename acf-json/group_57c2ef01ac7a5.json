@@ -89,8 +89,8 @@
                 },
                 {
                     "key": "57c2ef378c012",
-                    "name": "hero_latest_news",
-                    "label": "Hero + Latest News",
+                    "name": "hero_filter",
+                    "label": "Hero + Posts",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -116,6 +116,160 @@
                             "multiple": 0,
                             "return_format": "object",
                             "ui": 1
+                        },
+                        {
+                            "key": "field_57c65067d93d7",
+                            "label": "Filter Title",
+                            "name": "filter_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_57c64fddb8939",
+                            "label": "Filter by Tag or Category",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Choose one or both to filter the posts",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_57c64d872dc86",
+                            "label": "Tag",
+                            "name": "tag",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "taxonomy": "post_tag",
+                            "field_type": "select",
+                            "allow_null": 1,
+                            "add_term": 0,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "object",
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_57c64f9db8938",
+                            "label": "Category",
+                            "name": "category",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "taxonomy": "category",
+                            "field_type": "select",
+                            "allow_null": 1,
+                            "add_term": 0,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "object",
+                            "multiple": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "57c645ae2d7e5",
+                    "name": "hero_banner",
+                    "label": "Hero + Banner",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_57c645ae2d7e6",
+                            "label": "Post",
+                            "name": "post",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+
+                            ],
+                            "taxonomy": [
+
+                            ],
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_57c645c02d7e7",
+                            "label": "Banner Image",
+                            "name": "banner_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_57c645ea2d7e8",
+                            "label": "Banner Link",
+                            "name": "banner_link",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
                         }
                     ],
                     "min": "",
@@ -143,5 +297,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1472394399
+    "modified": 1472614533
 }
