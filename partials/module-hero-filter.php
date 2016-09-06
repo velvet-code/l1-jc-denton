@@ -31,7 +31,7 @@
 							<li class="latest-news__item">
 								<a href="<?php the_permalink(); ?>">
 									<article>
-										<time class="latest-news__item-pubdate"><?php the_time( 'jm' ); ?></time>
+										<time class="latest-news__item-pubdate"><?php the_time( 'dm' ); ?></time>
 										<h4 class="latest-news__item-title"><?php the_title(); ?></h4>
 
 										<div class="latest-news__item-excerpt">
