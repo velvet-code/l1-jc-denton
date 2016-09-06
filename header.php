@@ -38,10 +38,6 @@
 	<body <?php body_class(); ?>>
 <?php endif; ?>
 
-
-<div style="overflow-x:hidden;">
-<!-- hacky fix for now -->
-
 <header class="global-header">
 
 	<div class="wrap">
@@ -73,7 +69,7 @@
 				) );
 				?>
 				<button class="menu-trigger">Menüü</button>
-				
+
 
 			</div>
 

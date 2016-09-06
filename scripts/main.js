@@ -88,7 +88,10 @@
   });
 
   if ($('body').hasClass('top-banner')) {
-    $(".global-header").sticky({topSpacing:0});
+    $(".global-header").sticky({
+      topSpacing: 0,
+      responsiveWidth: true
+    });
   }
   $('.latest-news','.hero-aside__side ').scrollbar();
 
