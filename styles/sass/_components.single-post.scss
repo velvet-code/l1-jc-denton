@@ -4,9 +4,9 @@
 
 .single-post__header {
   height: 570px;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
-  position: fixed;
+  position: absolute;
   width: 100%;
   transition: .5s;
   background-color: $color-dark;
@@ -14,6 +14,7 @@
   display: flex;
   justify-content: center;
   flex-flow: column nowrap;
+  top: 0;
 
   .post-title-block {
     margin-top: 50px;
@@ -36,6 +37,7 @@
 
   .single-post--reveal-cover & {
     height: 100vh;
+    top: -250px;
     // background-size: contain;
 
     &:after {

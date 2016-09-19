@@ -30,13 +30,10 @@
 
 	<?php wp_head(); ?>
 </head>
-<?php if ( is_front_page() ): ?>
-	<body <?php body_class(' top-banner '); ?>>
-		<a href="http://goo.gl/Uwb1cM" class="banner banner--top" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/_placeholders/placeholder_top_banner.jpg')">
-		</a>
-<?php else:  ?>
-	<body <?php body_class(); ?>>
-<?php endif; ?>
+
+<body <?php body_class(' top-banner '); ?>>
+	<a href="http://goo.gl/GSjBjo" class="banner banner--top" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/_placeholders/placeholder_top_banner.jpg')">
+	</a>
 
 <header class="global-header">
 

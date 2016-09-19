@@ -5,7 +5,7 @@
   top: 0;
   height: 270px;
   background-size: contain;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   display: none;
 
@@ -26,5 +26,11 @@
       padding-top: 20px;
     }
 
+  }
+
+  body.single-post {
+    .main-content {
+      padding-top: 0;
+    }
   }
 }
