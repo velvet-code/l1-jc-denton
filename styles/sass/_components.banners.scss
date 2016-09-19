@@ -3,7 +3,7 @@
   position: fixed;
   width: 100%;
   top: 0;
-  height: 320px;
+  height: 270px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@
 
 @include mq(860) {
   body.top-banner {
-    padding-top: 220px;
+    padding-top: 165px;
 
     .global-header {
       position: relative;

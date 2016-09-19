@@ -2634,7 +2634,7 @@ img.mfp-img {
   position: fixed;
   width: 100%;
   top: 0;
-  height: 320px;
+  height: 270px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -2645,7 +2645,7 @@ img.mfp-img {
 
 @media screen and (min-width: 53.75em) {
   body.top-banner {
-    padding-top: 220px; }
+    padding-top: 165px; }
     body.top-banner .global-header {
       position: relative; }
     body.top-banner .main-content {
