@@ -408,7 +408,6 @@ body {
   background-color: #1C1D1E;
   color: #FAFAFA; }
   body.single-post {
-    background-color: #FAFAFA;
     color: #1C1D1E; }
 
 /* ------------------------------------------
@@ -2632,22 +2631,22 @@ img.mfp-img {
       font-family: "Input Sans Nar Bd", sans-serif; }
 
 .banner--top {
-  background-color: #000;
+  background-color: #f3e8e6;
   position: fixed;
   width: 100%;
   top: 0;
-  height: 270px;
+  height: 260px;
+  width: 100%;
   background-size: contain;
   background-position: top center;
-  background-repeat: no-repeat;
-  display: none; }
+  background-repeat: no-repeat; }
   @media screen and (min-width: 53.75em) {
     .banner--top {
       display: block; } }
 
 @media screen and (min-width: 53.75em) {
   body.top-banner {
-    padding-top: 165px; }
+    padding-top: 260px; }
     body.top-banner .global-header {
       position: relative; }
     body.top-banner .main-content {

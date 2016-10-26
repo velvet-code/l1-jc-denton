@@ -1,13 +1,13 @@
 .banner--top {
-  background-color: #000;
+  background-color: #f3e8e6;
   position: fixed;
   width: 100%;
   top: 0;
-  height: 270px;
+  height: 260px;
+  width: 100%;
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
-  display: none;
 
   @include mq(860) {
     display: block;
@@ -16,7 +16,7 @@
 
 @include mq(860) {
   body.top-banner {
-    padding-top: 165px;
+    padding-top: 260px;
 
     .global-header {
       position: relative;
