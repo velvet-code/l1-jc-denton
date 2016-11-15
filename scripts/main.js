@@ -93,7 +93,7 @@
       responsiveWidth: true
     });
   }
-  $('.latest-news','.hero-aside__side ').scrollbar();
+  $('.latest-news','.hero-aside__side').perfectScrollbar();
 
   $('.menu-trigger').on('click', function(event) {
     $('.global-header__nav').slideToggle();

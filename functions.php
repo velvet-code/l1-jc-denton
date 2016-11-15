@@ -10,7 +10,7 @@ function enqueue_scripts_styles() {
 
 	wp_register_script('fitvids', '//cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js', array('jquery'), '1.1.0' );
 	wp_register_script('sticky', '//cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.min.js', array('jquery'), '1.0.3' );
-	wp_register_script('scrollbar', '//cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.10/jquery.scrollbar.min.js', array('jquery'), '0.2.10' );
+	wp_register_script('scrollbar', 'https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.13/js/perfect-scrollbar.jquery.min.js', array('jquery'), '0.6.13' );
 	wp_register_script('magnific-popup', $magnificpopup_url, array('jquery'), '1.1.0' );
 
 	wp_enqueue_style('global-styles', $styles_url, array('fonts'), '0.0.1', 'screen');
