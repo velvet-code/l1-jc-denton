@@ -157,3 +157,20 @@ function island_shortcode($atts, $content = null) {
 	return '<div class="content-island">' . $content . '</div>';
 }
 add_shortcode( 'island', 'island_shortcode' );
+
+
+if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page(array(
+		'page_title' 	=> 'Options',
+		'menu_slug' 	=> 'options',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> true
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Banners',
+		'parent_slug'	=> 'options',
+	));
+
+}

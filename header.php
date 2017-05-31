@@ -36,9 +36,21 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(' top-banner '); ?>>
-	<a href="https://goo.gl/A9ve2W" class="banner banner--top" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/_placeholders/placeholder_top_banner_msi.gif')">
+	<?php
+	$banner_image = get_field( 'banner_image', 'options' );
+	$banner_url = get_field( 'banner_target_url', 'options' );
+	$banner_enabled = get_field( 'banner_enable', 'options' );
+
+	if ( true === $banner_enabled ) : ?>
+
+	<body <?php body_class(' top-banner '); ?>>
+
+	<a href="<?php echo esc_url( $banner_url ); ?>" class="banner banner--top" style="background-image:url('<?php echo esc_url( $banner_image['url'] ); ?>')">
 	</a>
+	<?php else: ?>
+	<body <?php body_class(); ?>>
+	<?php endif; ?>
+
 
 <header class="global-header">
 
