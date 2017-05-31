@@ -2013,11 +2013,11 @@ img.mfp-img {
       font-family: "Input Sans Nar Bd", sans-serif; }
 
 .banner--top {
-  background-color: #f3e8e6;
+  background-color: #1C1D1E;
   position: fixed;
   width: 100%;
   top: 0;
-  height: 260px;
+  height: 190px;
   width: 100%;
   background-size: contain;
   background-position: top center;
@@ -2028,7 +2028,7 @@ img.mfp-img {
 
 @media screen and (min-width: 53.75em) {
   body.top-banner {
-    padding-top: 260px; }
+    padding-top: 190px; }
     body.top-banner .global-header {
       position: relative; }
     body.top-banner .main-content {

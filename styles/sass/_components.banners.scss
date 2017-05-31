@@ -1,9 +1,9 @@
 .banner--top {
-  background-color: #f3e8e6;
+  background-color: #1C1D1E;
   position: fixed;
   width: 100%;
   top: 0;
-  height: 260px;
+  height: 190px;
   width: 100%;
   background-size: contain;
   background-position: top center;
@@ -16,7 +16,7 @@
 
 @include mq(860) {
   body.top-banner {
-    padding-top: 260px;
+    padding-top: 190px;
 
     .global-header {
       position: relative;

@@ -13,8 +13,8 @@ function enqueue_scripts_styles() {
 	wp_register_script('scrollbar', 'https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.13/js/perfect-scrollbar.jquery.min.js', array('jquery'), '0.6.13' );
 	wp_register_script('magnific-popup', $magnificpopup_url, array('jquery'), '1.1.0' );
 
-	wp_enqueue_style('global-styles', $styles_url, array('fonts'), '0.0.1', 'screen');
-	wp_enqueue_script('global-scripts', $scripts_url, array('jquery','fitvids','magnific-popup','sticky','scrollbar'), '0.0.1', true);
+	wp_enqueue_style('global-styles', $styles_url, array('fonts'), '20161126', 'screen');
+	wp_enqueue_script('global-scripts', $scripts_url, array('jquery','fitvids','magnific-popup','sticky','scrollbar'), '20161126', true);
 
 }
 add_action('wp_enqueue_scripts', 'enqueue_scripts_styles');

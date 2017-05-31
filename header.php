@@ -37,7 +37,7 @@
 </head>
 
 <body <?php body_class(' top-banner '); ?>>
-	<a href="https://goo.gl/jp4WyM" class="banner banner--top" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/_placeholders/placeholder_top_banner.jpg')">
+	<a href="https://goo.gl/A9ve2W" class="banner banner--top" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/_placeholders/placeholder_top_banner_msi.gif')">
 	</a>
 
 <header class="global-header">
