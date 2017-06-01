@@ -55,7 +55,6 @@
 <header class="global-header">
 
 	<div class="wrap">
-
 		<div class="global-header__left">
 
 			<a href="<?php echo esc_url( get_home_url() ); ?>" class="global-header__logo">
@@ -94,6 +93,13 @@
 
 			<div class="global-header__alt-menu">
 				<ul>
+					<li>
+						<a href="#" class="js-toggle-search">
+							<svg class="icon">
+								<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#search-icon"/>
+							</svg>
+						</a>
+					</li>
 					<li>
 						<a href="https://www.facebook.com/level1.ee/">
 							<svg class="icon">
@@ -138,6 +144,18 @@
 
 	</div>
 	<!-- /.wrap -->
+
+	<div class="search-dropdown">
+
+		<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ) ?>">
+			<label>
+				<input type="search" class="search-form__field" placeholder="Otsime mida..." value="<?php get_search_query() ?>" name="s" />
+			</label>
+			<input type="submit" class="search-form__submit" value="Otsi" />
+		</form>
+
+	</div>
+
 
 	<div class="progressbar">
 		<div class="wrap">

@@ -28,6 +28,10 @@
   })
 
 
+  $('.js-toggle-search').on('click', function(event) {
+    $('.search-dropdown').slideToggle();
+  });
+
   $('.js-reveal-header').on('click', function(event) {
     $('.single-post').toggleClass('single-post--reveal-cover')
     $('.post-title-block').fadeToggle()

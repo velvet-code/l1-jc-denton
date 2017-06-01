@@ -238,3 +238,39 @@ $header-height: 85px;
   height: 100%;
   background-color: $color-primary;
 }
+
+.search-dropdown {
+  position: absolute;
+  left: 0;
+  background-color: darken($color-dark-secondary, 5);
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  display: none;
+}
+
+.search-form {
+  &__field {
+    background-color: $color-primary;
+    color: $color-dark;
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+
+    &:focus {
+      background-color: darken( $color-primary, 10 );
+    }
+  }
+
+  &__submit {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: $color-dark;
+    color: $color-primary;
+
+    &:hover {
+      color: darken( $color-primary, 10 );
+    }
+  }
+}
