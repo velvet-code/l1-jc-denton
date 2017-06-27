@@ -127,7 +127,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="https://www.instagram.com/mangudeoo/">
+						<a href="https://www.instagram.com/level1.ee/">
 							<svg class="icon">
 								<use xlink:href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/dist/icons.svg#instagram-icon"/>
 							</svg>
