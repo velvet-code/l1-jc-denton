@@ -209,6 +209,7 @@
     flex-flow: row wrap;
     margin-top: 20px;
     margin-bottom: 40px;
+    justify-content: center;
 
     @include mq(1330) {
       margin-bottom: 50px;
