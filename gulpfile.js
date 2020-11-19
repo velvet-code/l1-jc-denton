@@ -9,7 +9,7 @@ var plumber = require('gulp-plumber')
 var svgSprite = require('gulp-svg-sprite')
 
 // Task that compiles scss files down to good old css
-gulp.task('pre-process', function () {
+gulp.task('pre-process', async function () {
   var onError = function (err) {
     notify.onError({
       title: 'Gulp',
@@ -35,7 +35,7 @@ gulp.task('pre-process', function () {
     }))
 })
 
-gulp.task('default', ['pre-process'], function () {
+gulp.task('default', gulp.series('pre-process'), async function () {
   gulp.watch('styles/sass/**/*.scss', ['pre-process'])
 })
 
